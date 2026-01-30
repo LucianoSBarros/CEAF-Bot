@@ -200,7 +200,7 @@ O fluxo foi projetado para estar em conformidade com a **LGPD**, incluindo:
 
 ## 🔧 Como Usar
 
-- Faça o download do arquivo JSON disponível neste repositório
+- Faça o download do arquivo JSON (typebot-export-autoriza-o-utxoof2.json) disponível neste repositório
 - Vá em https://typebot.io/ crie uma conta, caso já tenha acesse o "dashboard"
 - Crie um novo bot em "Create a typebot"
 - Ao criar um novo bot aparecerá a opção "Import file"
