@@ -18,6 +18,8 @@ Permitir que o cidadão ou representante:
 - Certificar que seus dados tratados estejam conforme a **Lei Geral de Proteção de Dados (LGPD)**
 
 ---
+![Fluxo do Typebot](app.typebot.io_typebots_cmkr0fvxa000ml104iutxoof2_edit.png)
+
 
 ## 🧩 Visão Geral do Fluxo
 
