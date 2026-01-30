@@ -15,6 +15,11 @@ O projeto foi criado com foco em:
 - Entregar ao paciente exatidão no andamento do seu processo
 
 ---
+## ESCLARECIMENTOS
+
+Uso de INTELIGÊNCIA ARTIFICIAL:
+- Foram usadas as ferramentas GEMINI e CHATGPT para ajudar na criação da lógica do chat bot, dúvidas de fluxo e erros encontrados no desenvolvimento, e no redigir deste documento.
+  - Vale destacar que todas as solicitações e documentos produzidos por essas ferramentas foram revisadas pelo o autor. 
 
 ## Objetivo do Projeto
 
