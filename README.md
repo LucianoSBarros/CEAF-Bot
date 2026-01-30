@@ -1,4 +1,4 @@
-Typebot CEAF – Consulta de Status (Farmácia de Alto Custo)
+**Typebot CEAF – Consulta de Status (Farmácia de Alto Custo)**
 
 ![Fluxo do Typebot](app.typebot.io_typebots_cmkr0fvxa000ml104iutxoof2_edit.png)
 
