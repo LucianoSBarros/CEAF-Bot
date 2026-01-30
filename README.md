@@ -18,6 +18,7 @@ O projeto foi criado com foco em:
 ## Objetivo do Projeto
 
 Permitir que o cidadão ou representante:
+- Verifica e identifica se a solicitação do paciente possui dados sensíveis ou palavras sensíveis
 - Localizar o status do seu processo no CEAF via **CNS**
 - Tratar os dados e fornecer apenas o status administrativo
 - Certificar que seus dados tratados estejam conforme a **Lei Geral de Proteção de Dados (LGPD)**
@@ -38,6 +39,7 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
   - `nome_paciente`
   - `cns_paciente`
   - `resposta_bot`
+  - `pedido_publico`
 - Esse procedimento evita:
   - Reaproveitamento indevido de dados
   - Vazamento de informações entre sessões
@@ -46,11 +48,16 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
 
 ---
 
-### 2️⃣ Saudação Inicial e Contextualização
+### 2️⃣ Saudação Inicial e Separação de dados
 
 - O bot apresenta uma mensagem de boas-vindas ao usuário.
 - Informa que o atendimento é referente à **Farmácia de Alto Custo (CEAF)**.
+- Pergunta qual a solicitação do paciente.
+  - Nessa etapa verifica-se se a solicitação contém dados sensíveis.
+  - Se conter, solicita ao paciente autorização e o encaminha para a sua solicitação.
 - Este passo tem como objetivo:
+  - Identificar dados sensíveis não públicos
+  - Separar a solicitação do paciente.
   - Contextualizar o serviço oferecido
   - Gerar confiança no atendimento automatizado
   - Orientar o usuário sobre o tipo de informação disponível
