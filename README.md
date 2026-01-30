@@ -1,6 +1,6 @@
 **Typebot CEAF – Consulta de Status (Farmácia de Alto Custo)**
 
-![Fluxo do Typebot](app.typebot.io_typebots_cmkr0fvxa000ml104iutxoof2_edit.png)
+![Fluxo do Typebot](app.typebot.io_typebots_cmkr0fvxa000ml104iutxoof2_edit (5).png)
 
 
 Este repositório contém o **fluxo completo em JSON de um Typebot** desenvolvido para automatizar o atendimento da **Farmácia de Alto Custo (CEAF)**, permitindo que pacientes consultem o **status do seu processo** utilizando o **CNS** ou **CPF**, com total conformidade com a **LGPD**.
