@@ -209,3 +209,6 @@ O fluxo foi projetado para estar em conformidade com a **LGPD**, incluindo:
   - Esse google sheets está no bloco "Consulta status" selecione "Get data from sheet"
   - Em "select row" mantenha em "all" e adicione um filtro em "+add filter rule"
   - Em "+add filter rule" digite na primeira linha "CNS" ou "CPF" , se for usar o número do CPF, selecione "Equals to" para procurar o valor exato do CNS e atribua a variável "cns_paciente".
+- Para usar esse chatbot no whatsapp é preciso usar uma ferramenta de integração, no próprio site do typebot existe uma opção paga, vale lembrar que os serviços de integração são em sua maioria pagos.
+  - DISCLAIMER!: Existem APIs de integração gratuitas, mas que correm o risco do número ser banido do Whatsapp, é indicado usar a integração fornecida pelo site Typebot. 
+
