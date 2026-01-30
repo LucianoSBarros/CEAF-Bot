@@ -21,7 +21,11 @@ O projeto foi criado com foco em:
 
 Uso de INTELIGÊNCIA ARTIFICIAL:
 - Foram usadas as ferramentas GEMINI e CHATGPT para ajudar na criação da lógica do chat bot, dúvidas de fluxo e erros encontrados no desenvolvimento, e no redigir deste documento.
-  - Vale destacar que todas as solicitações e documentos produzidos por essas ferramentas foram revisadas pelo o autor. 
+  - Vale destacar que todas as solicitações e documentos produzidos por essas ferramentas foram revisadas pelo o autor.
+ 
+Icones de integração entre o bot e o whatsapp:
+- Botões não são suportados dentro do whatsapp, dessa forma o usuário precisará incluir uma lógica de atendimento por números.
+   - Se o número 1, segue para um fluxo. Se o número for o 2 segue para outro fluxo. Basicamente, essa é a lógica que substitui os botões no typebot.
 
 ## Objetivo do Projeto
 
