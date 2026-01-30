@@ -17,11 +17,13 @@ O projeto foi criado com foco em:
 
 ## Objetivo do Projeto
 
-Permitir que o cidadão ou representante:
-- Verifica e identifica se a solicitação do paciente possui dados sensíveis ou palavras sensíveis
-- Localizar o status do seu processo no CEAF via **CNS**
-- Tratar os dados e fornecer apenas o status administrativo
-- Certificar que seus dados tratados estejam conforme a **Lei Geral de Proteção de Dados (LGPD)**
+Permite que o cidadão ou representante:
+- Verifique e identifique se a sua solicitação ou do paciente representado possui dados sensíveis ou palavras sensíveis.
+- Se sim, pode autorizar o uso dessas informações, e é informado do tratamento que será dado à elas.
+- Localize o status do seu processo no CEAF via **CNS**
+A solução:
+- Irá tratar os dados sensíveis e fornecer apenas o status administrativo.
+- Certificar que os dados tratados estejam conforme a **Lei Geral de Proteção de Dados (LGPD)**
 
 ---
 
@@ -44,7 +46,7 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
   - Reaproveitamento indevido de dados
   - Vazamento de informações entre sessões
   - Inconsistências em novas consultas
-- Este bloco é sempre executado **antes de qualquer interação com o usuário**.
+- Este bloco é sempre executado **antes de qualquer interação com o usuário** e **ao realizar uma nova consulta no fim do processo**. 
 
 ---
 
