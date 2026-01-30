@@ -7,11 +7,12 @@ Este repositório contém o **fluxo completo em JSON de um Typebot** desenvolvid
 
 O projeto foi criado com foco em:
 - Automação de atendimento público
+- Verificar de forma automática dados sensíveis
 - Tratar e dar segurança aos dados públicos que serão dispostos aos solicitantes
 - Permitir que atenda e se adapte para a realidade de outras unidades ou órgãos
-- Atender uma demanda de informação crescente nas farmácias de alto custo do DF.
-- Dar transparência ao trâmite executado dentro das farmácias de alto custo.
-- Entregar ao paciente exatidão no andamento do seu processo.
+- Atender uma demanda de informação crescente nas farmácias de alto custo do DF
+- Dar transparência ao trâmite executado dentro das farmácias de alto custo
+- Entregar ao paciente exatidão no andamento do seu processo
 
 ---
 
