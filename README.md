@@ -23,110 +23,141 @@ Permitir que o cidadão ou representante:
 ---
 
 
-🧩 Visão Geral do Fluxo (Passo a Passo)
-O fluxo do bot foi estruturado de forma linear, segura e modular, garantindo clareza para o usuário final e facilidade de manutenção para desenvolvedores. A seguir está o detalhamento completo de cada etapa:
+## 🧩 Visão Geral do Fluxo (Passo a Passo)
 
-1️⃣ Reset de Segurança (Inicialização da Sessão)
-Assim que o bot é iniciado, ele executa um reset completo das variáveis de sessão.
-Variáveis limpas:
-Nome do paciente
-CNS digitado anteriormente
-Resposta/status retornado da consulta
-Esse passo é fundamental para:
-Evitar reutilização indevida de dados
-Garantir conformidade com a LGPD
-Assegurar que cada conversa seja tratada como uma nova sessão
-📌 Este bloco é executado automaticamente antes de qualquer interação com o usuário.
+O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo clareza para o usuário final e facilidade de manutenção e adaptação por outros desenvolvedores.
 
-2️⃣ Saudação Inicial e Contextualização
-O bot exibe uma mensagem de boas-vindas, apresentando-se como assistente do CEAF.
-Informa de forma clara:
-Qual serviço está sendo oferecido
-Qual unidade está sendo atendida (Farmácia do Gama)
-Objetivo:
-Criar confiança no usuário
-Reduzir dúvidas iniciais
-Contextualizar o tipo de informação que pode ser consultada
+---
 
-3️⃣ Menu de Escolha (Decisão do Usuário)
-O usuário recebe um menu com duas opções claras:
-Verificar status do processo
-Solicitar outra informação
-Cada opção direciona para um fluxo específico:
-Consulta automatizada via CNS
-Fluxo alternativo para atendimento humano
-Esse ponto funciona como um divisor lógico do fluxo, evitando que usuários avancem sem necessidade.
+### 1️⃣ Reset de Segurança (Inicialização da Sessão)
 
-4️⃣ Coleta do CNS do Paciente
-Caso o usuário escolha consultar o status:
-O bot solicita o número do CNS, informando explicitamente:
-Digitar apenas números
-Sem pontos ou espaços
-O valor digitado é armazenado na variável:
-cns_paciente
+- Ao iniciar o bot, é executado automaticamente um **reset completo das variáveis de sessão**.
+- Variáveis limpas neste passo:
+  - `nome_paciente`
+  - `cns_paciente`
+  - `resposta_bot`
+- Esse procedimento evita:
+  - Reaproveitamento indevido de dados
+  - Vazamento de informações entre sessões
+  - Inconsistências em novas consultas
+- Este bloco é sempre executado **antes de qualquer interação com o usuário**.
 
-5️⃣ Validação Estrutural do CNS
-O CNS informado passa por uma validação automática:
-Verificação via expressão regular (regex)
-Exigência de exatamente 15 dígitos numéricos
-Se o valor não atender ao padrão:
-O usuário é imediatamente informado do erro
-O fluxo é redirecionado para correção
-Essa etapa evita:
-Consultas inválidas na planilha
-Erros de integração
-Sobrecarga desnecessária de dados
+---
 
-6️⃣ Confirmação e Aviso de LGPD
-Após a validação do CNS:
-O bot confirma o recebimento do dado
-Exibe um aviso informando que:
-Os dados serão usados exclusivamente para atendimento
-Não haverá compartilhamento com terceiros
-As informações são tratadas como não públicas
-Este passo reforça:
-Transparência
-Segurança jurídica
-Conformidade com a LGPD
+### 2️⃣ Saudação Inicial e Contextualização
 
-7️⃣ Consulta Automatizada no Google Sheets
-O bot executa uma integração direta com o Google Sheets.
-A planilha funciona como base de dados, contendo diversos dados sensíveis relativos ao paciente.
-O Paciente entra com um dado sensível pessoal e tem o tratamento dos dados e por fim, recebe o retorno do status administrativo do seu processo sem exposição dos dados sensíveis.
+- O bot apresenta uma mensagem de boas-vindas ao usuário.
+- Informa que o atendimento é referente à **Farmácia de Alto Custo (CEAF)**.
+- Este passo tem como objetivo:
+  - Contextualizar o serviço oferecido
+  - Gerar confiança no atendimento automatizado
+  - Orientar o usuário sobre o tipo de informação disponível
 
-8️⃣ Tratamento do Resultado da Consulta
-Após a consulta, o fluxo se divide conforme o resultado:
-✅ Registro Encontrado
-O bot informa que o cadastro foi localizado
-Exibe o status do processo retornado da planilha
-Oferece ao usuário duas opções:
-Realizar uma nova consulta
-Encerrar o atendimento
-❌ Registro Não Localizado
-O usuário é informado que:
-O processo não foi encontrado na base de dados
-É orientado a:
-Conferir o número informado
-Aguardar atendimento humano, se necessário
+---
 
-9️⃣ Fluxos Alternativos e Tratamento de Exceções
-O bot possui rotas específicas para situações fora do fluxo principal:
-CNS inválido
-Erro de formatação ou quantidade de dígitos
-Processo inexistente
-CNS válido, mas sem registro na planilha
-Outras informações
-Usuário opta por atendimento humano
-Coleta do CPF (sem pontos)
-Encaminhamento para um servidor responsável
-Esses fluxos garantem que nenhum usuário fique sem resposta, mesmo fora do caminho principal.
+### 3️⃣ Menu de Escolha (Decisão do Usuário)
 
-🔟 Encerramento da Conversa
-O atendimento é finalizado com uma mensagem de agradecimento.
-Reforça:
-Encerramento seguro da sessão
-Boa experiência do usuário
-A conversa pode ser reiniciada a qualquer momento, com variáveis limpas.
+- O usuário recebe um menu com duas opções principais:
+  - **Verificar o status do processo**
+  - **Solicitar outra informação**
+- Cada opção direciona para um fluxo distinto:
+  - Consulta automatizada via CNS
+  - Fluxo alternativo para atendimento humano
+- Este ponto funciona como um **divisor lógico do fluxo**, evitando consultas desnecessárias.
+
+---
+
+### 4️⃣ Coleta do CNS do Paciente
+
+- Caso o usuário opte por consultar o status:
+  - O bot solicita o número do **CNS do paciente**
+  - É informado que o CNS deve ser digitado:
+    - Apenas com números
+    - Sem pontos ou espaços
+- O valor informado é armazenado na variável:
+  - `cns_paciente`
+
+---
+
+### 5️⃣ Validação Estrutural do CNS
+
+- O CNS informado passa por uma validação automática:
+  - Verificação via **expressão regular (regex)**
+  - Exigência de **exatamente 15 dígitos numéricos**
+- Se o CNS não atender ao padrão esperado:
+  - O usuário é informado imediatamente do erro
+  - O fluxo é redirecionado para correção
+- Esta etapa evita:
+  - Consultas inválidas
+  - Erros de integração com a base de dados
+
+---
+
+### 6️⃣ Confirmação e Aviso de LGPD
+
+- Após a validação do CNS:
+  - O bot confirma o recebimento do dado
+  - Exibe um aviso sobre o tratamento das informações
+- O aviso informa que:
+  - Os dados são usados exclusivamente para atendimento
+  - Não há compartilhamento com terceiros
+  - As informações são tratadas como **não públicas**
+- Este passo reforça a conformidade com a **LGPD**.
+
+---
+
+### 7️⃣ Consulta Automatizada no Google Sheets
+
+- O bot realiza uma integração direta com o **Google Sheets**, utilizado como base de dados.
+- A planilha usada funciona como a base de dados, contendo diversos dados sensíveis relativos ao paciente.
+- A lógica do bot irá cruzar os dados do paciente que entra com um dado sensível pessoal, esses dados são tratados e por fim, o retorno é fornecido do status administrativo processo do paciente, sem qualquer exposição dos dados sensíveis.
+
+---
+
+### 8️⃣ Tratamento do Resultado da Consulta
+
+Após a consulta, o fluxo segue conforme o resultado obtido:
+
+#### ✅ Registro Encontrado
+- O bot informa que o cadastro foi localizado com sucesso.
+- Exibe o **status do processo**, conforme retornado da planilha.
+- O usuário pode:
+  - Realizar uma nova consulta
+  - Encerrar o atendimento
+
+#### ❌ Registro Não Localizado
+- O usuário é informado que o processo não foi encontrado na base de dados.
+- É orientado a:
+  - Conferir o número informado
+  - Aguardar atendimento humano, se necessário
+
+---
+
+### 9️⃣ Fluxos Alternativos e Tratamento de Exceções
+
+O bot possui fluxos específicos para situações fora do caminho principal:
+
+- **CNS inválido**
+  - Erro de formatação ou quantidade incorreta de dígitos
+- **Processo não localizado**
+  - CNS válido, porém sem registro na planilha
+- **Outras informações**
+  - Usuário opta por atendimento humano
+  - Coleta do CPF (sem pontos)
+  - Encaminhamento para um servidor responsável
+
+Esses fluxos garantem que **nenhum usuário fique sem resposta**.
+
+---
+
+### 🔟 Encerramento do Atendimento
+
+- O atendimento é finalizado com uma mensagem de agradecimento.
+- A sessão é encerrada de forma segura.
+- Um novo atendimento pode ser iniciado a qualquer momento, com variáveis limpas automaticamente.
+
+---
+
 
 ## 🗂 Estrutura do JSON
 
