@@ -35,6 +35,7 @@ Permite que o cidadão ou representante:
 - Verifique e identifique se a sua solicitação ou do paciente representado possui dados sensíveis ou palavras sensíveis.
 - Se sim, pode autorizar o uso dessas informações, e é informado do tratamento que será dado à elas.
 - Localize o status do seu processo no CEAF via **CNS**
+
 A solução:
 - Irá tratar os dados sensíveis e fornecer apenas o status administrativo.
 - Certificar que os dados tratados estejam conforme a **Lei Geral de Proteção de Dados (LGPD)**
