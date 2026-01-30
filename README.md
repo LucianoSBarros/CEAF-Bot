@@ -5,7 +5,7 @@
 
 Este repositório contém o **fluxo completo em JSON de um Typebot** desenvolvido para automatizar o atendimento da **Farmácia de Alto Custo (CEAF)**, permitindo que pacientes consultem o **status do seu processo** utilizando o **CNS** ou **CPF**, com total conformidade com a **LGPD**.
 
-VÍDEO DO DEMONSTRATIVO DO PROJETO: https://youtu.be/p6FbUHEWAqU
+**VÍDEO DO DEMONSTRATIVO DO PROJETO:** https://youtu.be/p6FbUHEWAqU
 
 O projeto foi criado com foco em:
 - Automação de atendimento público
