@@ -57,7 +57,7 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
 - Informa que o atendimento é referente à **Farmácia de Alto Custo (CEAF)**.
 - Pergunta qual a solicitação do paciente.
   - Nessa etapa verifica-se se a solicitação contém dados sensíveis.
-  - Se conter, solicita ao paciente autorização e o encaminha para a sua solicitação.
+  - Se conter, avisa do uso e solicita ao paciente autorização e o encaminha para a sua solicitação.
 - Este passo tem como objetivo:
   - Identificar dados sensíveis não públicos
   - Separar a solicitação do paciente.
