@@ -9,7 +9,9 @@ O projeto foi criado com foco em:
 - Automação de atendimento público
 - Tratar e dar segurança aos dados públicos que serão dispostos aos solicitantes
 - Permitir que atenda e se adapte para a realidade de outras unidades ou órgãos
-- Compartilhamento e reutilização por outros desenvolvedores
+- Atender uma demanda de informação crescente nas farmácias de alto custo do DF.
+- Dar transparência ao trâmite executado dentro das farmácias de alto custo.
+- Entregar ao paciente exatidão no andamento do seu processo.
 
 ---
 
