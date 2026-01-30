@@ -87,8 +87,8 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
   - **Verificar o status do processo**
   - **Solicitar outra informação**
 - Cada opção direciona para um fluxo distinto:
-  - Consulta automatizada via CNS
-  - Fluxo alternativo para atendimento humano
+  - Verificar o status do processo levará a consulta automatizada via CNS
+  - Solicitar outra informação levará a um fluxo alternativo para atendimento humano
 - Este ponto funciona como um **divisor lógico do fluxo**, evitando consultas desnecessárias.
 
 ---
@@ -112,7 +112,7 @@ O fluxo do bot foi projetado de forma **linear, modular e segura**, garantindo c
   - Exigência de **exatamente 15 dígitos numéricos**
 - Se o CNS não atender ao padrão esperado:
   - O usuário é informado imediatamente do erro
-  - O fluxo é redirecionado para correção
+  - O fluxo é redirecionado para a possível correção
 - Esta etapa evita:
   - Consultas inválidas
   - Erros de integração com a base de dados
