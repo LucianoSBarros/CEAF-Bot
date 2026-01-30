@@ -27,8 +27,7 @@ Intregação bot e o whatsapp:
 - O projeto visa atender soluções dentro do whatsapp e para isso é necessário alguns requisitos e uma API de integração que é fornecida pelo site Typebot.io
     - Esse projeto não irá se aprofundar sobre a integração da solução com o whatsapp, mas sim entregar um bot real e funcional capaz de atender essa integração.
     - Por envolver números pessoais, empresa, diversos atendimentos a integração precisa ser personalizada. Assim, o bot irá entregar a solução e a lógica de atendimento de um caso real, mas sem se aprofundar na integração.
-- Botões não são suportados dentro do whatsapp, dessa forma o usuário precisará incluir uma lógica de atendimento por números.
-   - Se o número 1, segue para um fluxo. Se o número for o 2 segue para outro fluxo. Basicamente, essa é a lógica que substitui os botões no typebot.
+    - O site fornece tutorial com passo a passo de como fazer a integração do bot com o whatsapp, no seguinte endereço: https://docs.typebot.io/deploy/whatsapp/create-meta-app
 
 ## Objetivo do Projeto
 
