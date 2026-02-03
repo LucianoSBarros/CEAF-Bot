@@ -241,7 +241,7 @@ O fluxo foi projetado para estar em conformidade com a **LGPD**, incluindo:
 - Ao criar um novo bot aparecerá a opção "Import file"
 - Nessa opção, ao abrir a janela você irá procurar o arquivo JSON que foi baixado e irá seleciona-lo.
 - O fluxo do bot irá aparecer conforme descrito neste projeto e por fim basta integrar o arquivo com o google sheets que será por você utilizado
-- É necessário configurar a formúla que está contida coluna "MSG_BOT_FINAL" na sua planilha de acordo com a realida do seu dado.
+- É necessário configurar a formúla que está contida coluna "MSG_BOT_FINAL" na planilha de dados e de acordo com a realidade dos seus dados.
   - Esse google sheets está no bloco "Consulta status" selecione "Get data from sheet"
   - Em "select row" mantenha em "all" e adicione um filtro em "+add filter rule"
   - Em "+add filter rule" digite na primeira linha "CNS" ou "CPF" , se for usar o número do CPF, selecione "Equals to" para procurar o valor exato do CNS e atribua a variável "cns_paciente".
