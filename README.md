@@ -17,7 +17,11 @@ O projeto foi criado com foco em:
 - Entregar ao paciente exatidão no andamento do seu processo
 
 ---
-## ESCLARECIMENTOS
+## ESCLARECIMENTOS e ATUALIZAÇÕES
+
+**Atualizações:**
+- 02/02/2026:
+  - Foi adicionado um fluxo alternativo que atende às integrações de API do whatsapp que não são oficiais, é um fluxo que não usa os botões (que são suportados apenas pela API oficial do whatsapp).
 
 **Uso de INTELIGÊNCIA ARTIFICIAL:**
 - Foram usadas as ferramentas GEMINI e CHATGPT para ajudar na criação da lógica do chat bot, dúvidas de fluxo e erros encontrados no desenvolvimento, e no redigir deste documento.
