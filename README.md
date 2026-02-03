@@ -35,8 +35,9 @@ O projeto foi criado com foco em:
     - O site fornece tutorial com passo a passo de como fazer a integração do bot com o whatsapp, no seguinte endereço: https://docs.typebot.io/deploy/whatsapp/create-meta-app
  
 **Uso desta solução por outros órgãos:**
-- Esta solução é capaz de atender a demanda por dados públicos de outros órgãos, mas se faz necessários ter uma fonte ou uma banco de dados que contenham essa informações.
+- Esta solução é capaz de atender a demanda por dados públicos de outros órgãos, mas se faz necessário ter uma fonte ou uma banco de dados que contenham essa informações.
   - A solução nesse uso foi alimentada com uma planilha de dados fícticios, mas que tem aplicabilidade real.
+  - O bot lê a planilha que contêm os dados e os entrega de acordo com a disposição da planilha, essa parte depende da realidade dos dados de cada órgão.
 
 ## Objetivo do Projeto
 
