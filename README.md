@@ -22,12 +22,17 @@ O projeto foi criado com foco em:
 **Uso de INTELIGÊNCIA ARTIFICIAL:**
 - Foram usadas as ferramentas GEMINI e CHATGPT para ajudar na criação da lógica do chat bot, dúvidas de fluxo e erros encontrados no desenvolvimento, e no redigir deste documento.
   - Vale destacar que todas as solicitações e documentos produzidos por essas ferramentas foram revisadas pelo o autor.
+  - A lógica, a ideia, e o densevolvimento da solução foram feitas pelo autor, para esclarecer melhor, a inteligência artificial não gerou o projeto, e sim ajudou na orientação.
  
 **Intregação bot e o whatsapp:**
 - O projeto visa atender soluções dentro do whatsapp e para isso é necessário alguns requisitos e uma API de integração que é fornecida pelo site Typebot.io
     - Esse projeto não irá se aprofundar sobre a integração da solução com o whatsapp, mas sim entregar um bot real e funcional capaz de atender essa integração.
     - Por envolver números pessoais, empresa, diversos atendimentos a integração precisa ser personalizada. Assim, o bot irá entregar a solução e a lógica de atendimento de um caso real, mas sem se aprofundar na integração.
     - O site fornece tutorial com passo a passo de como fazer a integração do bot com o whatsapp, no seguinte endereço: https://docs.typebot.io/deploy/whatsapp/create-meta-app
+ 
+**Uso desta solução por outros órgãos:**
+- Esta solução é capaz de atender a demanda por dados públicos de outros órgãos, mas se faz necessários ter uma fonte ou uma banco de dados que contenham essa informações.
+  - A solução nesse uso foi alimentada com uma planilha de dados fícticios, mas que tem aplicabilidade real.
 
 ## Objetivo do Projeto
 
