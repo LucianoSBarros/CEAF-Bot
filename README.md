@@ -22,7 +22,7 @@ O projeto foi criado com foco em:
 **Uso de INTELIGÊNCIA ARTIFICIAL:**
 - Foram usadas as ferramentas GEMINI e CHATGPT para ajudar na criação da lógica do chat bot, dúvidas de fluxo e erros encontrados no desenvolvimento, e no redigir deste documento.
   - Vale destacar que todas as solicitações e documentos produzidos por essas ferramentas foram revisadas pelo o autor.
-  - A lógica, a ideia, e o densevolvimento da solução foram feitas pelo autor, para esclarecer melhor, a inteligência artificial não gerou o projeto, e sim ajudou na orientação.
+  - A lógica, a ideia e o densevolvimento da solução foram feitas pelo autor, para esclarecer melhor, a inteligência artificial não gerou o projeto, e sim ajudou na orientação.
  
 **Intregação bot e o whatsapp:**
 - O projeto visa atender soluções dentro do whatsapp e para isso é necessário alguns requisitos e uma API de integração que é fornecida pelo site Typebot.io
